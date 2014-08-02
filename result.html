@@ -1,0 +1,268 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.42</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.2</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class=" status_passed"><td><a href="#testresult0">login</a></td></tr>
+<tr class=" status_passed"><td><a href="#testresult1">add_film</a></td></tr>
+<tr class=" status_passed"><td><a href="#testresult2">remove_film</a></td></tr>
+<tr class=" status_passed"><td><a href="#testresult3">logout</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">login.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">login</td></tr>
+</thead><tbody>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/php4dvd/</td>
+	<td></td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=password</td>
+	<td>admin</td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">add_film.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">add_film</td></tr>
+</thead><tbody>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/php4dvd/</td>
+	<td></td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=img[alt="Add movie"]</td>
+	<td></td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=name</td>
+	<td>Film third</td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=year</td>
+	<td>2012</td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=duration</td>
+	<td>90</td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=rating</td>
+	<td>100</td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=own_no</td>
+	<td></td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=seen_no</td>
+	<td></td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=aka</td>
+	<td>super!</td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">remove_film.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">remove_film</td></tr>
+</thead><tbody>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=img[alt="Remove"]</td>
+	<td></td>
+</tr>
+<tr class=" status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to remove this?</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">logout.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">logout</td></tr>
+</thead><tbody>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/php4dvd/</td>
+	<td></td>
+</tr>
+<tr class=" status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+<tr class=" status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to log out?</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/login.html
+info: Executing: |open | /php4dvd/ |  |
+info: Executing: |type | id=username | admin |
+info: Executing: |type | name=password | admin |
+info: Executing: |clickAndWait | name=submit |  |
+info: Starting test /selenium-server/tests/add_film.html
+info: Executing: |open | /php4dvd/ |  |
+info: Executing: |clickAndWait | css=img[alt=&quot;Add movie&quot;] |  |
+info: Executing: |type | name=name | Film third |
+info: Executing: |type | name=year | 2012 |
+info: Executing: |type | name=duration | 90 |
+info: Executing: |type | name=rating | 100 |
+info: Executing: |click | id=own_no |  |
+info: Executing: |click | id=seen_no |  |
+info: Executing: |type | name=aka | super! |
+info: Executing: |clickAndWait | id=submit |  |
+info: Starting test /selenium-server/tests/remove_film.html
+info: Executing: |clickAndWait | css=img[alt=&quot;Remove&quot;] |  |
+info: Executing: |assertConfirmation | Are you sure you want to remove this? |  |
+info: Starting test /selenium-server/tests/logout.html
+info: Executing: |open | /php4dvd/ |  |
+info: Executing: |click | link=Log out |  |
+info: Executing: |assertConfirmation | Are you sure you want to log out? |  |
+</pre></body></html>
